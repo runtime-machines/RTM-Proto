@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package model;
+
+message RequestMessage {
+  string TransactionHash = 1;
+}
+
+message ResponseMessage {
+  string TransactionHash = 1;
+  string Status = 2;
+  string Reference = 3;
+}
